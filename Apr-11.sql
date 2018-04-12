@@ -43,6 +43,3 @@
 7. What is the usage of ANALYZE command
        
       analyze=vaccum    -----> it will update  statistics of all tables.
-
-
-THis is new changes

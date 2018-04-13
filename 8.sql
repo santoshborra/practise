@@ -36,10 +36,27 @@
 4. How to check the table size from OS level
                   pg_relation_pathfile=('tablename'::regclass);  -----> output:  base   /5656564/6565----> path is     /opt/postgresql/data/pg96
 
-5. Demonstrate the usage of LEFT and RIGHT outer joins
 
-6. How to find the exact number of rows in a table without using COUNT(*) and reltuples from pg_class
 
-7. What is the usage of ANALYZE command
+5. What is the usage of ANALYZE command
        
-      analyze=vaccum    -----> it will update  statistics of all tables.
+      analyze=vaccum    -----> it will update  all tables statistics.
+                          example: refer in count of all tuple concept.
+
+
+
+6. How to find the exact number of rows in a table without using COUNT(*) and reltuples from pg_class.
+
+                -------->For example we have 8865 row in test table then run this query.
+     select 1 from test;------> Actually we don't have '1' column in test table, but it will print, how many rows contain in test table those many times '1' will prints.
+    select sum(1) from test;
+   8865---------o/p
+  
+
+
+7. Demonstrate the usage of LEFT and RIGHT outer joins.
+
+           INNER JOINS: It will fetch common rows from given tables.
+           LEFT OUTER JOINS: It will fetch common records from given tables and all records from left table.
+           RIGHT OUTER JOINS: It will fetch common records from given tables and all records from right table.
+           FULL OUTER JOINS: It will fetch all records from given tables

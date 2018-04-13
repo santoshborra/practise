@@ -20,6 +20,12 @@
 
 
 4. How to check whether a paremeter change requires reload OR restart of the instance (SQL query)
+
+       =====>select name, context from pg_settings where name='give parameter name';
+      ======> context column contains 4 types of data 1. postmaster--it means, if paramater changes requires restart
+                                                      2. sighup  ---it means, it requires reload
+                                                      3. user----not require both, but if we change parameter, it contains only for that session. once we close this session changed                                                                           parameter will be reset to previous value.
+                                                      4.superuser--
  
 
 5. Display top 5 biggest tables from the database.

@@ -34,7 +34,7 @@
          
 
 4. How to check the table size from OS level
-                  pg_relation_pathfile=('tablename'::regclass);  -----> output:  15464545/5656564/6565----> path is     /opt/postgresql/data/pg96
+                  pg_relation_pathfile=('tablename'::regclass);  -----> output:  base   /5656564/6565----> path is     /opt/postgresql/data/pg96
 
 5. Demonstrate the usage of LEFT and RIGHT outer joins
 

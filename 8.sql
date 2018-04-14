@@ -41,7 +41,7 @@
 5. What is the usage of ANALYZE command
        
       analyze=vaccum    -----> it will update  all tables statistics.
-                          example: refer in count of all tuple concept.
+                          example: refer in count of all tuples concept.
 
 
 

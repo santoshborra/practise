@@ -1,0 +1,159 @@
+           1st file:
+        ---------------
+
+1. How to check postgres is running or not.
+
+2. How to check 5432 port number is active.
+
+3. How to make PostgreSQL to prompt for the password(Use pg_hba)
+
+4. How to configure the .pgpass file
+
+5. How to check the current database size
+
+          2nd file
+      -----------------
+
+1. Demonstrate the usage of GROUP BY in SQL
+
+2. Demonstrate the usage of ORDER BY in SQL
+
+3. Demonstrate the usage of simple join between 3 tables
+
+4. Create a table with Primary key and demonstrate the constraint violation
+
+
+PostgreSQL
+----------
+1. How to find the OS uptime and PostgreSQL uptime
+
+2. Display top 10 Biggest tables in my database
+
+            3rd file
+       --------------------
+
+ SQL
+ 1. Demonstrate the usage of UNIQUE constraint
+
+ 2. Demonstrate the usage of CHECK constraint
+
+ 3. Demonstrate the usage of FOREIGN KEY
+
+ 4. Demonstrate the usage of UNION/UNION ALL
+
+ PostgreSQL
+
+ 1. Find the total table size (Including indexes)
+
+ 2. Go to the table's file location in OS level
+
+ 3. Display the user details
+
+             4th file
+         ------------------
+
+ 1. Generate any kind of error message in database, and fetch that error
+	from the log file.
+
+ 2. Create a database user with any password, and re-set the user password
+	with another password.
+
+ 3. Display the approximate row count of a big table, By creating a big table.
+ 
+ 4. What is the meaning of listen_addresses in postgresql.conf setting.
+ 
+ 5. How do we change the current PostgreSQL port number from default
+	port number to 8989.
+
+               5th file
+          -------------------
+
+ 1. Dispaly usage of UNION, UNION ALL, EXCEPT(MINUS) AND INTERSET in SQL 
+ 
+ 2. What is a View in SQL
+ 
+ 3. Difference between sub queries, and views
+ 
+ 4. Difference between Foreign Keys, and Primary Keys. Show a example on
+ how to create a table which foreign key points to itself.
+ 
+             6th file
+        ----------------------
+
+1. Demonstrate the usage of GROUP BY with UNION
+
+2. Demonstrate the usage of HAVING CLAUSE
+
+3. Demonstrate the difference between GROUP BY AND DISTINCT.
+
+4. Display only even numbers from the below table.
+
+5. Display the second maximum(6) number from the above table.
+
+6. How to find only duplicate rows from a table.
+
+            7th file
+       ----------------- 
+
+1. Modify PostgreSQL authentication from md5 to pam 
+
+2. Add a foriegn key to the table after inserting records into the child table 
+
+3. What is the alternative way to reload configuration file settings
+
+4. How to check whether a paremeter change requires reload OR restart of the instance (SQL query)
+
+5. Display top 5 biggest tables from the database.
+
+            8th file
+       ------------------
+
+1. Demonstrate compress and zipping files using tar command
+
+2. Deomonstrate the usage of sed command
+
+3. Create citext extension and demonstrate it's usage
+ 
+4. How to check the table size from OS level
+
+5. What is the usage of ANALYZE command
+
+6. How to find the exact number of rows in a table without using COUNT(*) and reltuples from pg_class.
+
+7. Demonstrate the usage of LEFT and RIGHT outer joins.
+
+       
+           9th file
+      --------------------
+
+1. How to drop a parent table without dropping the child table.
+
+2. What is a database system identifier and how to find it.
+
+3. How to find the query execution duration time from log file.
+
+4. What is the difference between TRUNCATE and DELETE statement.
+
+5. Demonstrate the usage of TRANSACTION REPEATABLE READ and SERIALIZATION.
+ 
+            
+          10th file
+     ----------------------
+
+1. Create a database user with some password and try to change password it later.
+
+2. Convert existing normal user to super user
+
+3. How to find the postgresql uptime
+
+4. Demonstrate the usage of 'include' in postgresql.conf by giving
+	1. work_mem, shared_buffers and temp_buffers into memory.conf
+	2. max_connections, port and listen_addresses into conn.conf
+
+5. Define the parameter affect hirerachy levels.
+
+
+
+
+
+

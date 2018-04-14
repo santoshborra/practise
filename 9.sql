@@ -1,7 +1,34 @@
 
 1. How to drop a parent table without dropping the child table.
 
+             Create a table parent with primary key, and create child table with foreign key reference to parent table. Now try to drop the parent table.
+ 
+       drop table parent;
+
+       error: cannot drop parent table because other objects depents on it.             ----------------o/p
+       DETAILS: Constrain child_column_fkey on table child depends on parent table.
+ 
+      ---------> So, use cascade to drop the parent table
+
+   drop table parent cascade;
+     
+   drop table------------o/p 
+
+
 2. What is a database system identifier and how to find it.
+
+     Desc: Each database server has a system identifier assigned when the database intialized(intidb).
+     Use: When we are taking backup, cloned ,...etc internally postgres uses this identifier.
+     How to find it: 'pg_controldata' using this command we will find it.
+
+    Go to command location /opt/postgres/pg96/bin ---> Make sure command is there or not. If command is exists then follow this command. 
+    Run this command as postgres user or another user with execute priviliges on the server software.
+
+  ./pg_controldata /opt/postgres/data/pg96 | grep "system identifier"
+
+  database system identifier:          6540654384139812647    ----------o/p
+
+
 
 3. How to find the query execution duration time from log file.
 

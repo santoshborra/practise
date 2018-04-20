@@ -5,6 +5,8 @@ Ans-- By typing "ps -ef |grep postgres" command in OS level
 Ans-- login psql and to know current port number type "select inet_server_port();" or \conninfo for full details database
 
 3. How to make PostgreSQL to prompt for the password(Use pg_hba)
+   
+   change from to md5 authentication
 
 
 4. How to configure the .pgpass file

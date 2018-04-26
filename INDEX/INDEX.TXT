@@ -62,8 +62,7 @@ PostgreSQL
  
  4. What is the meaning of listen_addresses in postgresql.conf setting.
  
- 5. How do we change the current PostgreSQL port number from default
-	port number to 8989.
+ 5. How do we change the current PostgreSQL port number from default port number to 8989.
 
                5th file
           -------------------
@@ -75,7 +74,7 @@ PostgreSQL
  3. Difference between sub queries, and views
  
  4. Difference between Foreign Keys, and Primary Keys. Show a example on
- how to create a table which foreign key points to itself.
+    how to create a table which foreign key points to itself.
  
              6th file
         ----------------------
@@ -101,7 +100,7 @@ PostgreSQL
 
 3. What is the alternative way to reload configuration file settings
 
-4. How to check whether a paremeter change requires reload OR restart of the instance (SQL query)
+4. How to check whether a paremeter change requires reload OR restart of the    instance (SQL query)
 
 5. Display top 5 biggest tables from the database.
 
@@ -118,7 +117,7 @@ PostgreSQL
 
 5. What is the usage of ANALYZE command
 
-6. How to find the exact number of rows in a table without using COUNT(*) and reltuples from pg_class.
+6. How to find the exact number of rows in a table without using COUNT(*) and    reltuples from pg_class.
 
 7. Demonstrate the usage of LEFT and RIGHT outer joins.
 
@@ -140,7 +139,7 @@ PostgreSQL
           10th file
      ----------------------
 
-1. Create a database user with some password and try to change password it later.
+1. Create a database user with some password and try to change password it    later.
 
 2. Convert existing normal user to super user
 
@@ -177,11 +176,48 @@ PostgreSQL
 
  4. Write a sql query to display all user tables along with's schema names
  
- 5. Describe the usage of search_path, and demonstrate how we need to set a perticular schema name as default search_path to a database.
+ 5. Describe the usage of search_path, and demonstrate how we need to set a     perticular schema name as default search_path to a database.
  
  6. How to log only DDL(CREATE, ALTER, DROP, TRUNCATE) statements in log file
 
 
+           13th file
+     --------------------------
+
+ 1. Write shell script which connects to PostgreSQL without a password
+ 
+ 2. Write shell script which connects to PG which prints the PostgreSQL version
+ 
+ 3. Write shell script which connects to PG and create a table "test" if it is      not exists
+ 
+ 4. Write shell script which displays the number of connection from         pg_stat_activitiy view
+ 
+ 5. Write shell script which prints the "test" table output to /tmp/test.txt
 
 
+          14th file
+     -----------------------
 
+ 1. Define the difference between kill commannd signal TERM and SIGKILL     (Google)
+ 
+ 2. Define the usage of .bash_profile(CentOS) OR .profile(Ubuntu)
+ 
+ 3. Demonstrate the usage of CHECK constraint
+ 
+ 4. Write a SQL query which prints the second "i" position from the string     "India"
+ 
+ 5. Write a SQL query which replace the character 'c' with 'C' in the string     'chuck'
+
+      
+         15th file
+      -----------------
+
+1. How to find the used cached memory in OS level (Google)
+
+2. Install/Create pgfincore, pg_buffercache extensions in database level
+
+3. Define what is the CHECKPOINT it's background behavior
+
+4. Install PostgreSQL 9.3 version, and demonstrate a dblink connection from your current version to the 9.3
+
+5. Demonstrate the usage of psql's -H, -R, -A, -t and -F parameters

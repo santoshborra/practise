@@ -7,7 +7,7 @@
 
      mkdir postgresql
      cd postgresql
-     wget copylink  ---> How to get the link-->go to postgresql.org-->downloads-->source---->select latest version-->copy the file link, file should be end with  .tat.gz                                 
+     wget copylink  ---> How to get the link-->go to postgresql.org-->downloads-->source---->select latest version-->copy the file link, file should be end with  .tar.gz                                 
      ----->It should be a zip file, so unzip the file
         
      tar -xzvf filename
@@ -32,8 +32,6 @@
 
      make install
 
-     mkdir data
-
      ./initdb -D /home/santosh/postgres/data---------> It will create all the database files and directory structures.--->go to the initdb file path then run this command.  
      
 
@@ -43,7 +41,7 @@
 ----------------------------------------------------------------
 
 
-      
+      psql -c "sql query;"
 
 
 
@@ -89,7 +87,7 @@
 
          Before we are going to solve this query, we need to know about two parameters, because this query is depends on those two parameters.
 
-        1. log_min_duration_statement, this parameter should be in off.
+        1. log_min_duration_statement, this parameter should be in off(-1).
 
         2. log_statement ----> In this parameter we have 4 values, those are none(off),ddl,mod,all (all statements).
                                Here 'ddl' means log all data definition statements. i.e CREATE, ALTER and DROP statements.

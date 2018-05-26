@@ -13,6 +13,23 @@ KiB Swap:  4063228 total,  4063228 free,        0 used.  2709576 avail Mem
 
 2. Install/Create pgfincore, pg_buffercache extensions in database level
 ------------------------------------------------------------------------
+ How to install a module by manually:
+------------------------------------
+
+
+Download the latest version: http://pgfoundry.org/frs/download.php/3186/pgfincore-v1.1.1.tar.gz
+As root user:
+export PATH=/usr/local/pgsql91/bin:$PATH     //Set the path to point pg_config.
+tar -xvf pgfincore-v1.1.1.tar.gz
+cd pgfincore-1.1.1
+make clean
+make 
+make install
+
+Now connect to PG and run below command
+
+postgres=# CREATE EXTENSION pgfincore;
+postgres=# CREATE EXTENSION pg_buffercache;
 
      
 
